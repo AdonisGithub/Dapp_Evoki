@@ -1,0 +1,47 @@
+.account-view {
+    width: 90%;
+    margin: auto;
+    .account-card {
+        justify-content: center;
+        margin: auto;
+        padding: 0 5px;
+        margin-top: 30px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0 5px 1px #3598f2;
+
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            padding: 10px 30px;
+            .MuiTypography-body1 {
+                font-family: Montserrat Medium;
+                font-weight: 700;
+                font-size: 1rem;
+                color: rgba(255, 255, 255);
+                line-height: 1;
+            }
+        }
+        .data-column {
+            display: flex;
+            flex-direction: column;
+            padding: 15px 10px;
+            height: 150px;
+            justify-content: center;
+            align-items: center;
+            .MuiTypography-body1 {
+                font-size: 1.2rem;
+                font-family: Square;
+                font-weight: 600;
+                line-height: 1.5;
+            }
+        }
+    }
+    .MuiPaper-root {
+        color: rgb(243 240 240 / 87%);
+        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}

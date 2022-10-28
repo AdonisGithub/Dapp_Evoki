@@ -1,0 +1,81 @@
+.dapp-topbar {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .dapp-topbar-slider-btn {
+        width: 201px;
+        height: 60px;
+        border-radius: 15px;
+        background-color: #3d90f8;
+        font-family: sf-ui;
+        color: #fff;
+        ////////////
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+   
+
+        cursor: pointer;
+        img {
+            width: 100%;
+        }
+    }
+
+    .dapp-topbar-btns-wrap {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+}
+
+.social-row {
+    & > *:not(:first-child) {
+        margin-left: 12px;
+    }
+    margin-right: 54px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+        background-color: #011101;
+        width: 31px;
+        height: 31px;
+        border-radius: 5px;
+        border: 1px solid #013005;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            transform: scale(1.1);
+        }
+        color: #fff;
+    }
+}
+
+.header-coin {
+    width: 51px;
+    height: 51px;
+    margin: 0 15px 0 30px;
+    img {
+        width: 100%;
+    }
+}
+
+.header-menu-icon {
+    color: #f83600;
+    font-size: 30px;
+    svg {
+        vertical-align: middle;
+        cursor: pointer;
+    }
+}

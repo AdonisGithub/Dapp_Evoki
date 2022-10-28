@@ -1,0 +1,30 @@
+.connect-button {
+    background: linear-gradient(90deg, #0c339a, #4d94e4);
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px 0px #4d94e4;
+    border: 2px solid #4d94e4;
+    padding: 13px 20px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    .connect-button-progress {
+        margin-left: 10px;
+        margin-top: 4px;
+    }
+
+    p {
+        font-family: sf-ui-thin;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right: 10px;
+        }
+    }
+}

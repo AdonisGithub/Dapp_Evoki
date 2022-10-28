@@ -1,0 +1,123 @@
+.dashboard-view {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+
+    .dashboard-infos-wrap {
+        width: 100%;
+    }
+}
+
+.dashboard-content-wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    color: white;
+    @media screen and (max-width: 1280px) {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 600px;
+        grid-gap: 30px;
+    }
+    & > div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .dashbord-card-group {
+        justify-content: flex-end;
+        .dashboard-card {
+            margin-top: 20px;
+        }
+    }
+    .dashboard-card {
+        backdrop-filter: blur(10px);
+        align-items: center;
+        width: 100%;
+        border: none;
+        box-shadow: 0 0 5px 1px #3598f2;
+        border-radius: 10px;
+        padding: 15px 0;
+        .card-title-price {
+            padding: 9px 26px;
+            cursor: pointer;
+            background: #011101;
+            border-radius: 2px;
+            border: 2px solid #012b04;
+            font-family: Montserrat Medium;
+            font-weight: 800;
+            // height: 24px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .timer-div {
+            border-radius: 9999px;
+            width: 60%;
+            margin: 30px auto;
+            position: relative;
+            padding-top: 60%;
+            animation: counter 1000ms ease-in-out infinite;
+            & > span {
+                position: absolute;
+                font-family: sf-ui-bold;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                color: #3598f2;
+                animation: second 1000ms ease-in-out infinite;
+            }
+        }
+    }
+    .card2 {
+        border: none;
+        box-shadow: 0 0 5px 1px #3598f2;
+    }
+}
+
+.card-title-regular {
+    font-size: 20px;
+    font-family: Montserrat Medium;
+}
+.card-value {
+    font-size: 20px;
+    color: #3d90f8;
+    padding-top: 10px;
+    font-family: sf-ui-bold;
+}
+
+@keyframes counter {
+    0% {
+        box-shadow: 0 0 25px 5px #3598f2;
+    }
+    70% {
+        box-shadow: 0 0 15px 5px #3598f2;
+    }
+    100% {
+        box-shadow: 0 0 25px 5px #3598f2;
+    }
+}
+@keyframes second {
+    0% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}

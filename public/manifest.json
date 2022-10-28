@@ -1,0 +1,17 @@
+{
+  "short_name": "Evoki",
+  "start_url": ".",
+  "homepage": "./",
+  "name": "Evoki",
+  "launch_path": "/public/index.html",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "100x100 ",
+      "type": "image/x-icon"
+    }
+  ],
+  "display": "browser",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
